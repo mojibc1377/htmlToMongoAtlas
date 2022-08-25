@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="container ">
+        <header class="header">
+            <h1 id="title">
+                Survey based on your Nationality !
+            </h1>
+            <p id="description">
+                we're stealing your data and we aint sorry!
+                don't be a bitch about it 
+            </p>
+        </header>
+        <form action="" id="survey-form" method="post">
+
+            <!-- Text section -->
+            <div class="slidecontainer">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" class="formControl" placeholder="Enter your name" required>
+                <div
+            </div>
+            <!-- end of text section -->
+
+
+            <!-- slider section -->
+            <div class="form-group">
+                <label for="interface"></label>
+                <label for="interface"> how old are you ?</label>
+                1 <input type="range" min="1" max="60" value="30"  class="slider" id="myRange" oninput="this.form.amountInput.value=this.value"required> 60
+                <output type="number" name="amountInput" min="0" max="20" value="0" oninput="this.form.amountRange.value=this.value" />
+            </div>
+            <!-- end of slider section -->
+
+            <!-- Type mama's phone section -->
+            <div class="form-group">
+                <label for="mama's phone">Phone Number<span class="clue" id="quest">(OPTIONAL)</span></label>
+                <input type="number" name="phone" id="mama's phone" class="formControl" placeholder="Please insert your Phone Number" required>
+            </div>
+            <!-- end of mama's phone section -->
+
+            <!-- Type Number section -->
+            <div class="form-group">
+                <label for="address">Address <span class="clue">(OPTIONAL)</span></label>
+                <input type="text" name="address" id="address" class="formControl" placeholder="insert your address">
+            </div>
+            <!--  end of number section -->
+
+            <!-- select section -->
+            <div class="form-group">
+                <p id="quest">Which option best describe your current role?</p>
+                <select name="role" required id="dropdown" class="formControl">
+                    <option value disabled selected >Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="job">Prostitute</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <!-- end of select section -->
+
+            <!-- radio button section -->
+            <div class="form-group">
+                <p id="quest">How u doin?</p>
+                <label for="">
+                    <input type="radio" name="feel" value="perfect"
+                    class="inputRadio"
+                    checked> Perfecto!
+                </label>
+                <label for="">
+                    <input type="radio" name="feel" value="Naja/solala"
+                    class="inputRadio"
+                    >Naja/Solala
+                </label>
+                <label for="">
+                    <input type="radio" name="feel" value="rough"
+                    class="inputRadio"
+                    > had a rough day
+                </label>
+                <label for="">
+                    <input type="radio" name="feel" value="suicaidal"
+                    class="inputRadio"
+                    > just wanna kill ma self
+                </label>
+                <label for="">
+                    <input type="radio" name="feel" value="rude"
+                    class="inputRadio"
+                    > fuck **f
+                </label>
+            </div>
+            <!-- end of radio button -->
+
+            <!-- Checkbox section -->
+            <div class="form-group">
+                <p id="quest">what would cheer you up ? </p>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="coffe"> coffee
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="wine"> Wine
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="blowjob">  Blowjob
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="suicide"> killing ma self
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="other"> Other
+                </label>
+            </div>
+            <!-- End of checkbox section -->
+
+            <!-- Textarea section -->
+            <div class="form-group">
+                <p id="quest">anything else?</p>
+                <textarea name="feedback"  cols="30" rows="5"  id="feedback" class="textarea" placeholder="Enter your feedback here..."></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="btn" value="add">submit</button>
+            </div>
+
+            
+        </form>
+    </div>
+</body>
+</html>
