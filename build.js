@@ -24,7 +24,7 @@ const Note = mongoose.model("Note", notesSchema)
 
 
 app.get('/',function(req, res){
-    res.sendFile(__dirname + '/index.html').se
+    res.sendFile(__dirname + '/index.html')
 })
 
 app.post('',function(req, res){
