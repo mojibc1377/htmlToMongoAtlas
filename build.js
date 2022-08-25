@@ -24,7 +24,7 @@ const Note = mongoose.model("Note", notesSchema)
 
 
 app.get('/',function(req, res){
-    res.sendFile(__dirname + '/index.html')
+    res.sendFile(__dirname + '/index.html').se
 })
 
 app.post('',function(req, res){
@@ -45,6 +45,6 @@ app.post('',function(req, res){
 
 
 
-app.listen(3000, function(){
+app.listen(process.env.PORT, function(){
     console.log('server running on port 3000');
 })
