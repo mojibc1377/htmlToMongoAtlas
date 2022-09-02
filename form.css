@@ -2,9 +2,10 @@
 
 :root{
     --color-white:#f3f3f3;
-    --color-darkblue:#fc9c92b4;
+    --color-darkblue:#050df7b4;
     --color-darkblue-alpha:rgba(60, 60, 60, 0.707);
-    --color-green:#21eb6e;
+    --color-green:#222222;
+    --color-yellow:#eef747;
     --color-red:rgb(250,3,3)
 }
 *,*::before,*::after{
@@ -27,13 +28,13 @@ body::before{
     width: 100%;
     z-index: -1;
     background: var(--color-darkblue);
-    background-image: linear-gradient(215deg,rgba(231, 253, 130, 0.624),rgba(46, 189, 245, 0.8)),url(https://image.shutterstock.com/image-vector/outrageous-contempt-fuck-you-hand-600w-655065910.jpg);
+    background-image: linear-gradient(215deg,rgba(27, 27, 26, 0.624),rgba(46, 189, 245, 0.8)),url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Galaxy_history_revealed_by_the_Hubble_Space_Telescope_%28GOODS-ERS2%29.jpg/1600px-Galaxy_history_revealed_by_the_Hubble_Space_Telescope_%28GOODS-ERS2%29.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 #title{
-    color: var(--color-red);
+    color: var(--color-yellow);
     font-weight: 600;
     
     
@@ -85,7 +86,7 @@ input,button,select,textarea{
     color: #e4e4e4;
 }
 #quest{
-    color: rgb(250, 3, 3);
+    color: rgb(3, 159, 250);
     font-size: 1.5rem;
 }
 .slidecontainer {
@@ -185,7 +186,7 @@ form{
     outline: none;
     text-transform: uppercase;
     font-size: 1.5rem;
-    color: blue;
+    color: rgba(223, 27, 31, 0.865);
     border: none;
 }
 .slidecontainer {

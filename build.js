@@ -1,11 +1,12 @@
 const express = require('express');
-const app = express()
+const app = express();
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const { text } = require('body-parser');
-const dotenv = require("dotenv")
+const dotenv = require("dotenv");
 
-app.use(bodyParser.urlencoded({extended: true}))
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(express.static('public'));
 
 mongoose.connect("mongodb+srv://moji:Mojtaba1377@cluster0.ecnqdbp.mongodb.net/?retryWrites=true&w=majority",{useNewUrlParser:true},{useUnifiedTopology:true})
 
@@ -46,5 +47,5 @@ app.post('',function(req, res){
 
 
 app.listen(process.env.PORT, function(){
-    console.log('server running on port 3000');
+    console.log('server running on port 2000');
 })
